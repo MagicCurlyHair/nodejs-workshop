@@ -113,7 +113,7 @@ app.put('/todos/:id', async (req, res) => {
     const todoToUpdate = todos.find(todo => todo.id === id);
 
     if (content !== undefined) {
-      todoToUpdate.conent = content;
+      todoToUpdate.content = content;
     }
 
     if (isDone !== undefined) {
